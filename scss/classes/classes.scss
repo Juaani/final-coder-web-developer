@@ -108,6 +108,9 @@
     align-items: center;
     bottom: 20px;
     right: 20px;
+    animation-name: brillo-boton;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
     img{
         width: 65%;
         height: 65%;
