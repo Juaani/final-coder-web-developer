@@ -28,6 +28,10 @@
         object-fit: cover;
         width: 100%;
         height: 600px;
+        @include tamanio-pantalla("mobile"){
+            height: 378px;
+            width: 100%;
+        }
     }
     p{
         font-weight: bold;
@@ -112,5 +116,18 @@
         transform: translateY(-2px);
         transition: all 0.4s ease-in-out; 
         box-shadow: 2px 2px 2px grey;   
+    }
+}
+
+.nav-item{
+    a{
+        color: white;
+        font-family: 'Roboto';
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        font-weight: bolder;
+        &:hover{
+            color: orange;
+        }
     }
 }

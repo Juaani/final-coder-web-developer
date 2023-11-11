@@ -1,0 +1,16 @@
+@mixin tamanio-pantalla($Screen){
+    @if $Screen == "mobile"{
+        @media (max-width:576px) {
+            @content;
+            }
+        }
+}   
+
+@media(prefers-color-scheme: dark){
+    :root{
+        body{
+            background-color: #ffffff;
+            color: #000000;
+        }
+    }
+}
