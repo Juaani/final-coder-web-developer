@@ -1,0 +1,116 @@
+.burger-menu{
+    width: 50px;
+    &:hover{
+        background-color: white;
+        transition: all 0.5s ease-in-out;
+        i{
+            filter: invert(0%);
+            transition: all 0.5s ease-in-out; 
+        }
+    }
+    i{
+        width: 100%;
+        filter: invert(100%);
+    }
+}
+
+
+.invert{
+    filter: invert(100%);
+}
+
+.banner{
+    width: 100%;
+    overflow: hidden;
+    --bs-gutter-x: 0rem;
+    height: auto;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 600px;
+    }
+    p{
+        font-weight: bold;
+    }
+}
+
+.tarjeta{
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    img{
+        padding: 1rem;
+        width: 100%;
+        height: 90%;
+        object-fit: contain;
+        &:hover{
+            box-shadow: 5px 5px 5px grey;
+            transform: translateY(-2px);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+}
+
+.redes-sociales{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    img{
+        &:hover{
+            transform: translateY(-2px);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+}
+
+.copy{
+    padding-top: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.img-carrousel{
+    img{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+}
+
+.img-mvo{
+    width: 50px;
+    height: 50px;
+}
+
+.btn-form:hover{
+    background-color: orange;
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+}
+
+.wpp-button{
+    background-color: #25d366;
+    position: fixed;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    z-index: 30000000000;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    img{
+        width: 65%;
+        height: 65%;
+    }
+    &:hover{
+        transform: translateY(-2px);
+        transition: all 0.4s ease-in-out; 
+        box-shadow: 2px 2px 2px grey;   
+    }
+}

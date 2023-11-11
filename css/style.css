@@ -1,17 +1,233 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 6 | @import './general/media.scss';
- *   |         ^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 6:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 6 \2502  @import './general/media.scss';\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 6:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body a {
+  font-family: "Roboto";
+  color: white;
+  text-decoration: none;
 }
+body a:hover {
+  color: orange;
+  transition: all 0.3s ease-in-out;
+}
+body p {
+  color: white;
+  font-family: "Roboto";
+}
+body h1 {
+  padding: 2rem;
+}
+
+header img {
+  padding: 10px;
+  width: 200px;
+  height: auto;
+}
+header a {
+  color: black;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+header a:hover {
+  color: orange;
+  transition: all 0.3s ease-in-out;
+}
+
+main a {
+  font-family: "Roboto";
+  color: black;
+  font-size: 1rem;
+}
+main p {
+  font-family: "Roboto";
+  color: black;
+  justify-content: center;
+}
+main button {
+  background-color: black;
+  color: white;
+  border-radius: 0.3rem;
+  border-color: transparent;
+}
+main button:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+main iframe {
+  width: 100%;
+}
+
+footer {
+  padding: 0;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+  gap: 2rem;
+}
+footer p {
+  font-family: "Roboto";
+  color: white;
+  font-size: 1rem;
+}
+
+.burger-menu {
+  width: 50px;
+}
+.burger-menu:hover {
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.burger-menu:hover i {
+  filter: invert(0%);
+  transition: all 0.5s ease-in-out;
+}
+.burger-menu i {
+  width: 100%;
+  filter: invert(100%);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+  --bs-gutter-x: 0rem;
+  height: auto;
+}
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+.banner p {
+  font-weight: bold;
+}
+
+.tarjeta {
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+}
+.tarjeta img {
+  padding: 1rem;
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+.tarjeta img:hover {
+  box-shadow: 5px 5px 5px grey;
+  transform: translateY(-2px);
+  transition: all 0.4s ease-in-out;
+}
+
+.redes-sociales {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+}
+.redes-sociales img:hover {
+  transform: translateY(-2px);
+  transition: all 0.4s ease-in-out;
+}
+
+.copy {
+  padding-top: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.img-carrousel img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.img-mvo {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-form:hover {
+  background-color: orange;
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+.wpp-button {
+  background-color: #25d366;
+  position: fixed;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  z-index: 30000000000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+}
+.wpp-button img {
+  width: 65%;
+  height: 65%;
+}
+.wpp-button:hover {
+  transform: translateY(-2px);
+  transition: all 0.4s ease-in-out;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.titulo {
+  color: black;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  font-family: "Roboto";
+}
+
+.sub-titulo {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+.titulo-carrousel {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+.subtitulo-carrousel {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: "Roboto";
+}
+
+.nav-item a {
+  color: white;
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  font-weight: bolder;
+}
+.nav-item a:hover {
+  color: orange;
+}
+
+.cita {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

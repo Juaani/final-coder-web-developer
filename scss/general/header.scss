@@ -1,0 +1,18 @@
+header{
+    img{
+        padding: 10px;
+        width: 200px;
+        height: auto;
+        }
+        a{
+            color: black;
+            font-family: 'Roboto';
+            font-size: 1.2rem;
+            font-weight: bolder;
+            &:hover{
+                color: orange;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+}
+

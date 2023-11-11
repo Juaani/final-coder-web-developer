@@ -1,0 +1,26 @@
+main{
+    a{
+        font-family: 'Roboto';
+        color: black;
+        font-size: 1rem;
+    }
+    p{
+        font-family: 'Roboto';
+        color: black;
+        justify-content: center;
+    }
+    button{
+        background-color: black;
+        color: white;
+        border-radius: 0.3rem;
+        border-color: transparent;
+        
+        &:hover{
+        transform: translateY(-2px);
+        transition: all 0.3s ease-in-out;
+        }
+    }
+    iframe{
+        width: 100%;
+    }
+}
