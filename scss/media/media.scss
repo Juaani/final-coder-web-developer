@@ -6,11 +6,16 @@
         }
 }   
 
-@media(prefers-color-scheme: dark){
-    :root{
-        body{
-            background-color: #ffffff;
-            color: #000000;
-        }
-    }
+@media (prefers-color-scheme: light) {
+   :root {
+       --body-bg: #FFFFFF;
+       --body-color: #000000;
+   }
+}
+
+@media (prefers-color-scheme: dark) {
+   :root {
+       --body-bg: #FFFFFF;
+       --body-color: #000000;
+   }
 }

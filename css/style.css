@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
-  background-color: white;
+  background: var(--body-bg);
+  color: var(--body-color);
 }
 body a {
   font-family: "Roboto";
@@ -76,10 +77,16 @@ footer p {
   font-size: 1rem;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --body-bg: #FFFFFF;
+    --body-color: #000000;
+  }
+}
 @media (prefers-color-scheme: dark) {
-  :root body {
-    background-color: #ffffff;
-    color: #000000;
+  :root {
+    --body-bg: #FFFFFF;
+    --body-color: #000000;
   }
 }
 @keyframes brillo {

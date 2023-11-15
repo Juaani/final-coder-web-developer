@@ -1,5 +1,6 @@
 body{
-    background-color: white;
+    background: var(--body-bg);
+    color: var(--body-color);
     a{
         font-family: 'Roboto';
         color: white;
