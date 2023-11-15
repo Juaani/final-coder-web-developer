@@ -1,0 +1,17 @@
+@keyframes brillo{
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: white;
+    }
+}
+
+@keyframes brillo-icono{
+    from{
+        filter: invert(100%);
+    }
+    to{
+        filter: invert(0%);
+    }
+}
